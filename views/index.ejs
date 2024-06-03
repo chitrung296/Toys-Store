@@ -14,11 +14,11 @@
     h1 {
     font-family: 'Arial', sans-serif; /* Chọn font chữ */
     font-size: 36px; /* Kích thước chữ */
-    color: #333; /* Màu chữ */
+    color: #ffffff; /* Màu chữ */
     text-align: center; /* Căn giữa */
     margin: 20px 0; /* Khoảng cách trên và dưới */
     padding: 10px; /* Khoảng cách bên trong */
-    background-color: #ff7272; /* Màu nền */
+    background-color: #2b5b59; /* Màu nền */
     border-radius: 8px; /* Bo góc */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
 }
@@ -197,13 +197,13 @@
             <div class="col-md-6">
                 <form action="/quotes" method="POST">
                     <div class="mb-3">
-                        <label for="productName" class="form-label">Tên sản phẩm</label>
-                        <input type="text" class="form-control" id="productName" placeholder="Tên sản phẩm" name="name"
+                        <label for="productName" class="form-label"><b>Name Product:</b></label>
+                        <input type="text" class="form-control" id="productName" placeholder="Name Product" name="name"
                             required />
                     </div>
                     <div class="mb-3">
-                        <label for="price" class="form-label">Giá</label>
-                        <input type="text" class="form-control" id="price" placeholder="Giá" name="quote" required />
+                        <label for="price" class="form-label"><b>Price:</b></label>
+                        <input type="text" class="form-control" id="price" placeholder="Price" name="quote" required />
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -243,7 +243,11 @@
 
     <!-- ... -->
     <script src="./main.js"></script>
-
+    <!-- <script>
+        document.querySelector('form').addEventListener('submit',function(event){
+            alert("Submitted!");
+        })
+    </script> -->
 </body>
 
 </html>
